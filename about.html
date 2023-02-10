@@ -1,1 +1,67 @@
-<h2>github</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .wrapper {
+  display: flex;  /* kich hoat flex box */
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%; /*cho tất cả phần tử bên trong có độ dài 100% và tỉ lệ chiếm không gian trống là như nhau*/
+}
+
+.header-flex-2 {
+  background: tomato;
+}
+
+.footer-flex-2 {
+  background: lightgreen;
+  order: 4;
+}
+
+.main {
+  text-align: left;
+  background: deepskyblue;
+  height: 400px;
+  flex: 3 0px; /* cho phần nội dung main ở giữa chiếm 3 phần không gian trống so với 2 phần aside bên cạnh */
+  order: 2;
+}
+
+.aside { flex: 1 0 0; } /* 2 phần aside sẽ chỉ chiếm 1 phần không gian */
+
+.aside-1 {
+  background: gold;
+  height: 400px;
+  order: 1;
+}
+
+.aside-2 {
+  background: hotpink;
+  height: 400px;
+  order: 3;
+
+
+}
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header-flex-2">Header</header>
+        <article class="main">
+          <p>Flexbox là một kiểu dàn trang (layout mode) mà nó sẽ tự cân đối kích thước của các phần tử bên trong để hiển thị trên mọi thiết bị. Nói theo cách khác, bạn không cần thiết lập kích thước của phần tử, không cần cho nó float, chỉ cần thiết lập nó hiển thị chiều ngang hay chiều dọc, lúc đó các phần tử bên trong có thể hiển thị theo ý muốn.</p>  
+        </article>
+        <aside class="aside aside-1">Aside 1</aside>
+        <aside class="aside aside-2">Aside 2</aside>
+        <footer class="footer-flex-2">Footer</footer>
+      </div>
+</body>
+</html>
