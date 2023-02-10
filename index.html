@@ -1,3 +1,81 @@
-<h1>Đây là demo</h1>
-<h2>Thành Long</h2>
-<h3>Long</h3>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #head {
+  width: 100%;
+  overflow: auto;
+}
+
+.logo {
+  width: 20%;
+  background-color: aquamarine;
+  float: left;
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+.banner {
+  width: 80%;
+  background-color: aqua;
+  float: right;
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+#head-link {
+  background-color: blue;
+  padding: 10px;
+}
+
+/*.content::after {
+  content: '';
+  clear: both;
+  display: table;
+}*/
+
+#left, #content, #right {
+  width: 15%;
+  float: left;
+  box-sizing: border-box;
+  padding: 150px 30px;
+  background-color: antiquewhite;
+}
+
+#content {
+  width: 70%;
+  background-color: aliceblue;
+}
+
+#right {
+  background-color: wheat;
+}
+
+footer {
+  padding: 30px;
+  background-color: brown;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div id="head">
+          <div class="logo">logo</div>
+          <div class="banner">banner</div>
+        </div>
+        <div id="head-link">head-link</div>
+  </header>
+  <section class="content">
+    <div id="left">left</div>
+    <div id="content">content</div>
+    <div id="right">right</div>
+  </section>
+  <footer>footer</footer>
+
+</body>
+</html>
